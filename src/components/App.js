@@ -1,13 +1,22 @@
+import React, { useState } from 'react';
 
-import React from "react";
-import './../styles/App.css';
+function App() {
+  // Step 1: Initialize state
+  const [count, setCount] = useState(0);
 
-const App = () => {
+  // Step 2: Handle button click
+  const handleClick = () => {
+    setCount(count + 1);
+  };
+
+  // Step 3: Display the UI
   return (
-    <div>
-        {/* Do not remove the main div */}
+    <div style={{ textAlign: 'center', marginTop: '50px' }}>
+      <h1>Button Counter</h1>
+      <p>Button clicked {count} {count === 1 ? 'time' : 'times'}</p>
+      <button onClick={handleClick}>Click Me</button>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
