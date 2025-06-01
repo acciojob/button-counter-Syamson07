@@ -13,7 +13,7 @@ function App() {
   return (
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
       <h1>Button Counter</h1>
-      <p>Button clicked {count} {count === 1 ? 'time' : 'times'}</p>
+      <p>Button clicked {count} {count === 1 ? 'time' : 'time'}</p>
       <button onClick={handleClick}>Click Me</button>
     </div>
   );
